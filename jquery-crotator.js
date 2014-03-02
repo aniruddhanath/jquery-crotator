@@ -1,4 +1,4 @@
-// jQuery-Clider: A Content Rotator for jQuery
+// jQuery-Crotator: A Content Rotator for jQuery
 // ===========================================
 // Author: Aniruddha Nath
 // Version: 0.0.1
