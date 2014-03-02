@@ -1,0 +1,28 @@
+/* 	Basic CSS */
+body{
+	background-color: rgba(0, 0, 0, 0.9);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAACVBMVEUuLi4QEBBOTk4Mm+4EAAAAA3RSTlMPDw/mDYK9AAADYUlEQVQ4yzWSwY6aUBhGfwgYcXUhQMAVNGpGnwIIEJgV14ABV2LEjPMUYKBxulKChpmVGsZon7Jq2yf4Ts53wLsuBhn44YkQk9/S6gaGmzZbU2b5risvxKoBng327y/kkfjqa2iuqJAyC3yTHBfR1kc1ZyegGu+CcJURwSa0QX+Y8EUReJ5I+eEaX76N0xZ4IcLFovAnbr1LidgDduxJCsNouvxSnnpKC3QWlh8eJaGinuoDtg/VT/UzW3yO3I3WRr0dBoYrLtw5QVVFT50qSWG/77a3NEuroRTPMFdCLHnGIkChQ30h3ZctCKnSCoGYcspHjHJTg4SOkRYZfR66BHviWRhp/YbxKEHtSwtsbDQg1+vvwmKsNmNz84FoQthK2Mw0L9NSCdqKMoQdzAlc90/LDeVeQziDLzRiXtg+NbAwnXkAKs5OyQG1yfpDUlO8A+3W4fkDXzw9ojKFfmdSOs4bLVgUu3KwCf0BC6IhBDza/lR8aQHqxR+7HA6vXExhnauhxVjC3k9C+qTiPQUvYGlpNVLYmWnpx1Uvz4D3zqizZVaCn0aOa8vwWPi8hcJj4bEI+3LZm0Hoi2+8F9GggiCvp6idq19F2hmilgJSyJvNd2Jzo2AdtCctMC+ckLwePWX4VwT8xVEv5rhgDf7KQUrdqa1vNf2hdaJkQoEvYQo6fKDZlLyZIBXWEi1zgtRlANYw3OxgRdXmnjIJM/DErSHGcHfjtwLcurt5uoLnf/c/b5AQ+/ufsC2C17i72gktmXFzjYYvnaNy8UQ6wX6U6dMj/C8nMpdY8OkGZGcu16Jb9uocMtIVALRFa9cOh3qzXqw99AZbj5Sjwdz+UTbEMrNoeAaWW+wzsHtwwHWBpinclvrF2+uAooFS7MDsOgPNCd54PZRAZ3KCxC9bVM6GPbZlwj9ihJX5esKiG4jw0mhS6hue+nkmuHc47BXZkYGNZuba9VkVkAYnK9gael3EpKAXoPAVks6zTv2r5x2s1b2PX7mdBQ7d39lNrA7G8MB94Pt1GD3wYVbhKLCD9ZQTZE8jU9j0MWK1K03fxpxk/G4gUTfLWTR4LeeIpJieD7bduxqfO/VoQha+V2OQqhH/2mg3ISDzXyLDQ0rHEu/qxfF4i7GBdQgyhXhGG8/aW/IQ/QF41B6f9d54ZAAAAABJRU5ErkJggg==);
+}
+#crotator{
+	width: 400px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAfCAMAAAC4Y5/EAAAABlBMVEWZzP////9tUNt9AAAAAnRSTlNmZuHlxXQAAAAjSURBVHja7c6hAQAADIOw9f+n9wKuFaAjuIBEIlEBkSbHCXqsfgQ587BztAAAAABJRU5ErkJggg==);
+	padding: 20px;
+	border-left: 24px solid rgba(63, 131, 184, 0.78);
+	-webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+	-moz-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+	box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+}
+h3, h4{
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+	font-style: italic;
+	color: #009;
+	text-align:center;
+}

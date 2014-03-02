@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content Rotator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="crotator">
+		<div id="quotes">
+			<p>Darkness cannot drive out darkness: Only light can do that. Hate cannot drive out hate: Only love can do that.</p>
+			<p>Live as if you were to die tomorrow. Learn as if you were to live forever. </p>
+			<p>Yesterday is history, tomorrow is mystery, today is a gift of god, which is why we call it the present.</p>
+			<p>Not all of us can do great things. But we can do small things with great love.</p>
+			<p>Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.</p>
+			<p>The woods are lovely, dark, and deep, but I have promises to keep, and miles to go before I sleep, and miles to go before I sleep.</p>
+		</div>
+		<div id="authors">
+			<p>- Martin Luther King Jr.</p>
+			<p>- Mahatma Gandhi</p>
+			<p>- Bil Keane</p>
+			<p>- Mother Teresa</p>
+			<p>- Albert Einstein</p>
+			<p>- Robert Frost</p>
+		</div>
+	</div>
+	<!-- include jQuery -->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<!-- include the plugin -->
+	<script src="js/jquery-crotator.js"></script>		
+	<!-- initializing the plugin -->
+	<script>
+			$("#quotes").crotator({
+				// optional changes
+				timeofExistence: 2000,
+				typeofTag: "<h3/>",
+				tagClass: "quotes"
+			});
+			$("#authors").crotator({
+				// optional changes
+				timeofExistence: 2000,
+				typeofTag: "<h4/>",
+				tagClass: "authors"
+			});
+	</script>
+</body>
+</html>
