@@ -59,12 +59,12 @@
 	            
 	            	$(tag, {
 	                	text:q[index].textContent
-	            	}).fadeIn('slow').addClass(cls).appendTo(container);
+	            	}).fadeIn('slow').addClass(cls).appendTo(container).fadeIn('slow');
 	            	// jQuery based animation can be replaced with CSS 3 animations
 	            	// remove .fadeIn('slow') from the above line or comment the above lines
 	            	// and uncomment the following
 	            	/*
-				 	$(tag, {
+			$(tag, {
                 		text:q[index].textContent
             		}).addClass(cls).appendTo(container);
 	            	*/
