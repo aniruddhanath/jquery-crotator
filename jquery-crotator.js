@@ -1,7 +1,7 @@
 // jQuery-Crotator: A Content Rotator for jQuery
 // ===========================================
 // Author: Aniruddha Nath
-// Version: 0.0.1
+// Version: 0.0.2
 // Created: 3/02/2014
 // Date: 3/02/2014
 // Website: 
@@ -35,8 +35,8 @@
 		// erasing all the content from the container
 		container.html('');
 
-		var index = 0;
-		
+		var index = 1;
+
 		// time of existence for each slide
 		var time = this.config.timeofExistence;
 
@@ -44,41 +44,45 @@
 		var tag = this.config.typeofTag;
 		var cls = this.config.tagClass;
 
+		// putting up a fallback content
+		// comment the following three lines to hide the fallback content
+		$(tag, {
+        		text: q[0].textContent
+    		}).fadeIn('slow').addClass(cls).appendTo(container);
+
 		// function which rotates the contents
 		timedCount();
 
 		function timedCount() {
 
-			//console.log(index);
-            
-        	if ( index < q.length - 1 ) {
-        	
-        		setTimeout( function () {
+			if ( index < q.length) {
+				
+        			setTimeout( function () {
+					
 					// erasing the previous slide contents
 					container.html('');
-	            
-	            	$(tag, {
-	                	text:q[index].textContent
-	            	}).fadeIn('slow').addClass(cls).appendTo(container).fadeIn('slow');
-	            	// jQuery based animation can be replaced with CSS 3 animations
-	            	// remove .fadeIn('slow') from the above line or comment the above lines
-	            	// and uncomment the following
-	            	/*
-			$(tag, {
-                		text:q[index].textContent
-            		}).addClass(cls).appendTo(container);
-	            	*/
-	            
-	            	index = index + 1;
-	            	timedCount();
-        	
-        		},time);
+					$(tag, {
+						text: q[index].textContent
+	            			}).fadeIn('slow').addClass(cls).appendTo(container);
+			            	// jQuery based animation can be replaced with CSS 3 animations
+			            	// remove .fadeIn('slow') from the above line or comment the above lines
+			            	// and uncomment the following
+			            	/*
+					$(tag, {
+		                		text:q[index].textContent
+		            		}).addClass(cls).appendTo(container);
+			            	*/
+			            	
+					index = index + 1;
+			            	timedCount();
+		        	
+		        	},time);
             
-        	} else {
-        		index = 0;
-        		timedCount();
+	        	} else {
+	        		index = 0;
+	        		timedCount();
+	        	}
         	}
-        }
 	}
 
 	$.fn.crotator = function (options) {
