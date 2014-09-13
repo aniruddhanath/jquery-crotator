@@ -1,12 +1,13 @@
-// jQuery-Crotator: A Content Rotator for jQuery
-// ===========================================
-// Author: Aniruddha Nath
-// Version: 0.0.2
-// Created: 3/02/2014
-// Date: 3/02/2014
-// Website: 
-// Description: This is a jQuery plugin for creating a Content Slider / Content Rotator in any webpage.
-//		Can be used as a "Quotes Rotater" widget. CSS3 of jQuery UI based animation can also be used.
+/**
+ * jQuery-Crotator: A Content Rotator for jQuery
+
+ * Author: Aniruddha Nath
+ * Version: 0.0.2
+ * Website: https://github.com/Aniruddha22/jQuery-Crotator
+ * Description: This is a jQuery plugin for creating a Content Slider / Content Rotator in any webpage.
+		Can be used as a "Quotes Rotater" widget. CSS3 of jQuery UI based animation can also be used.
+ * License: http://www.opensource.org/licenses/mit-license.php
+ */
 
 ;(function($) {
 	
@@ -47,8 +48,8 @@
 		// putting up a fallback content
 		// comment the following three lines to hide the fallback content
 		$(tag, {
-        		html: $(q[0]).html()
-    		}).fadeIn('slow').addClass(cls).appendTo(container);
+			html: $(q[0]).html()
+		}).fadeIn('slow').addClass(cls).appendTo(container);
 
 		// function which rotates the contents
 		timedCount();
@@ -57,32 +58,30 @@
 
 			if ( index < q.length) {
 				
-        			setTimeout( function () {
+				setTimeout( function () {
 					
 					// erasing the previous slide contents
 					container.html('');
 					$(tag, {
 						html: $(q[index]).html()
-	            			}).fadeIn('slow').addClass(cls).appendTo(container);
-			            	// jQuery based animation can be replaced with CSS 3 animations
-			            	// remove .fadeIn('slow') from the above line or comment the above lines
-			            	// and uncomment the following
-			            	/*
+					}).fadeIn('slow').addClass(cls).appendTo(container);
+					// jQuery based animation can be replaced with CSS 3 animations
+					// remove .fadeIn('slow') from the above line or comment the above lines
+					// and uncomment the following
+					/*
 					$(tag, {
-		                		html: $(q[index]).html()
-		            		}).addClass(cls).appendTo(container);
-			            	*/
-			            	
+						html: $(q[index]).html()
+					}).addClass(cls).appendTo(container);
+					*/
 					index = index + 1;
-			            	timedCount();
-		        	
-		        	},time);
-            
-	        	} else {
-	        		index = 0;
-	        		timedCount();
-	        	}
-        	}
+					timedCount();
+				},time);
+
+			} else {
+				index = 0;
+				timedCount();
+			}
+		}
 	}
 
 	$.fn.crotator = function (options) {
