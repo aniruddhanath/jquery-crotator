@@ -1,39 +1,52 @@
 jQuery - Crotator
 =================
 
-This is a [jQuery](http://www.jquery.com) plugin for creating a **Content Slider / Content Rotator** in any webpage. This plugin converts the children inside any specified element of a page into a Slider. jQuery UI as well as CSS animations can also be included with this plugin.
+This is a [jQuery](http://www.jquery.com) plugin for creating a **Content Slider / Content Rotator** in any webpage. This plugin converts the children inside any specified element of a page into a Slider. User can define array of timeline according to which the contents will be synced. CSS animations can also be included with this plugin.
+
+### [Demo](http://aniruddhanath.herokuapp.com/projects/jquery-crotator)
 
 Usage
 -----
 
-Copy `jquery.crotator.js` to the javascript folder. Then include jQuery and the plugin in the page.
-
-```
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/jquery-crotator.js"></script>
-```
-
-The plugin can be called with jQuery in different ways.
-
 ### Standard call with default settings:
 ```
 <script>
-  $('#myElement').crotator();
+  $('#theElement').crotator();
 </script>
 ```
-Here `myElement` is the id of the tag for which we want the contents to be converted to a Slides.
+Here `theElement` is the id of the tag for which we want the contents to be converted to a Slides.
 
 ### Call with options:
 ```
 <script>
-  $('#myElement').crotator({
-    timeofExistence: 2000,
+  $('#theElement').crotator({
+    timeOfExistence: 2, // in seconds
     typeofTag: "<h4/>",
-    tagClass: "quotes"
+    tagClass: "elClass",
+    cycle: true, // true, false
+    startEmpty: false // true, false
   });
 </script>
 ```
-Here `timeofExistence` decides what should be the duration of time for which a slide will be visible. `typeofTag` and `tagClass` respectively decide the tag and class of the tag that enclose the slide content.
+
+ - `timeOfExistence` decides what should be the duration of time for which a slide will be visible.
+ - `typeofTag` and `tagClass` respectively decide the tag and class of the tag that enclose the slide content. 
+ - `cycle` turns on/off looping back to the starting slide. 
+ - `startEmpty` decides whether there should be an element displayed when the page loads or contents starts appearing after the time given in `timeOfExistence`.
+
+
+### Call with user defined array of timeline
+```
+<script>
+  $('#theElement').crotator({
+  	// timeline (in seconds)
+    timeArray: [2, 20, 14, 9, 3, 10],
+    typeofTag: "<h4/>",
+    tagClass: "elClass",
+  });
+</script>
+```
+`timeArray` should be in seconds. The length of `timeArray` should be equal to the number of children present in `theElement`.
 
 For more clearity, the example folder can be checked.
     

@@ -14,6 +14,7 @@
 			<p>Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.</p>
 			<p>The woods are lovely, dark, and deep, but I have promises to keep, and miles to go before I sleep, and miles to go before I sleep.</p>
 		</div>
+
 		<div id="authors">
 			<p>- Martin Luther King Jr.</p>
 			<p>- Mahatma Gandhi</p>
@@ -23,24 +24,29 @@
 			<p>- Robert Frost</p>
 		</div>
 	</div>
-	<!-- include jQuery -->
 	<script src="js/jquery-1.11.0.min.js"></script>
-	<!-- include the plugin -->
-	<script src="js/jquery-crotator.js"></script>		
-	<!-- initializing the plugin -->
+	<script src="../jquery.crotator.js"></script>
 	<script>
-			$("#quotes").crotator({
-				// optional changes
-				timeofExistence: 2000,
-				typeofTag: "<h3/>",
-				tagClass: "quotes"
-			});
-			$("#authors").crotator({
-				// optional changes
-				timeofExistence: 2000,
-				typeofTag: "<h4/>",
-				tagClass: "authors"
-			});
+
+		// Calling with user defined timeline
+		$("#quotes").crotator({
+			// timeline (in seconds)
+			timeArray: [2, 20, 14, 9, 3, 10],
+			// terminate after display the last element
+			cycle: false,
+			typeofTag: "<h3/>",
+			tagClass: "quotes"
+		});
+
+		// calling with some options
+		$("#authors").crotator({
+			// starting with empty node
+			startEmpty: false,
+			// time of existence of each slide (in seconds)
+			timeofExistence: 2,
+			typeofTag: "<h4/>",
+			tagClass: "authors"
+		});
 	</script>
 </body>
 </html>
