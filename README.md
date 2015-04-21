@@ -48,5 +48,5 @@ Here `theElement` is the id of the tag for which we want the contents to be conv
 ```
 `timeArray` is in seconds. The length of `timeArray` should be equal to the number of children present in `theElement`.
 
-For more clearity, the example folder can be checked.
+For more clarity, the example folder can be checked.
     
