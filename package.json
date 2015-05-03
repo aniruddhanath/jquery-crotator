@@ -1,0 +1,29 @@
+{
+  "name": "jquery-crotator",
+  "version": "1.0.0",
+  "description": "jQuery plugin for creating a Content Slider / Content Rotator in any webpage",
+  "main": "jquery.crotator.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhee/jquery-crotator.git"
+  },
+  "keywords": [
+    "jquery-crotator",
+    "jquery-content-rotator",
+    "jquery-slider",
+    "ecosystem:jquery",
+    "jquery-plugin"
+  ],
+  "author": "Aniruddha Nath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anhee/jquery-crotator/issues"
+  },
+  "homepage": "https://github.com/anhee/jquery-crotator#readme"
+}
