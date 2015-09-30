@@ -6,7 +6,7 @@
  * 
  * Website: https://github.com/Aniruddha22/jQuery-Crotator
  * 
- * Description: This is a jQuery plugin for creating a Content Slider / Content Rotator in any webpage.
+ * Description: A jQuery plugin for creating a slider or content rotator.
  *		Options available for user-defined-timeline and more.
  * 
  * License: http://www.opensource.org/licenses/mit-license.php
