@@ -1,13 +1,10 @@
 {
   "name": "jquery-crotator",
   "version": "1.0.0",
-  "description": "jQuery plugin for creating a Content Slider / Content Rotator in any webpage",
+  "description": "jQuery plugin for creating a content rotator or slider",
   "main": "jquery.crotator.js",
   "directories": {
     "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
