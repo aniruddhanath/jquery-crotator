@@ -8,6 +8,11 @@ A [jQuery](http://www.jquery.com) plugin for creating a **slider or content rota
 Usage
 -----
 
+### Setup
+```
+bower install jquery-crotator
+```
+
 ### Standard call with default settings:
 ```
 <script>
