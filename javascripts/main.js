@@ -1,1 +1,8 @@
-console.log('This would be the main JS file.');
+$(document).ready(function() {
+    $("#quotes").crotator({
+        cycle: true,
+        timeofExistence: 4,
+        typeofTag: "<p/>",
+        tagClass: "quotes"
+    });
+});

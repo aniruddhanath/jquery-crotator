@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -8,49 +9,46 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <title>Jquery Crotator by anhee</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="inner">
-        <h1>Jquery Crotator</h1>
-        <h2>This is a jQuery plugin for creating a Content Slider / Content Rotator in any webpage.</h2>
-        <a href="https://github.com/anhee/jquery-crotator" class="button"><small>View project on</small> GitHub</a>
-      </div>
+        <div class="inner">
+            <h1>Jquery Crotator</h1>
+            <h2>A jQuery plugin for creating a slider or content rotator.</h2>
+            <a href="https://github.com/anhee/jquery-crotator" class="button"><small>View project on</small> GitHub</a>
+        </div>
     </header>
-
     <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <p>This is a <a href="http://www.jquery.com">jQuery</a> plugin for creating a <strong>Content Slider / Content Rotator</strong> in any webpage. This plugin converts the children inside any specified element of a page into a Slider. User can define array of timeline according to which the slider will be synced. CSS animations can be used with this plugin to enhance the contents visually.</p>
-
-<h3>
-<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://aniruddhanath.herokuapp.com/projects/jquery-crotator">Demo</a>
-</h3>
-
-<h2>
+        <div class="inner clearfix">
+            <section id="main-content">
+                <p>A <a href="http://www.jquery.com">jQuery</a> plugin for creating a <strong>slider or content rotator</strong>. It converts the children inside any selected element into a Slider. One can define array of timeline according to which the slider will be synced. CSS animations can be used with this plugin to enhance the contents visually.</p>
+                <h2>
+<a id="standard-call-with-default-settings" class="anchor" href="#standard-call-with-default-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+                <div id="quotes">
+                    <p><b style="color:red">Darkness</b> cannot drive out darkness: Only light can do that. Hate cannot drive out hate: Only love can do that.</p>
+                    <p>Live as if you were to die tomorrow. Learn as if you were to live forever. </p>
+                    <p>Yesterday is history, tomorrow is mystery, today is a gift of god, which is why we call it the present.</p>
+                    <p>Not all of us can do great things. But we can do small things with great love.</p>
+                    <p>Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.</p>
+                    <p>The woods are lovely, dark, and deep, but I have promises to keep, and miles to go before I sleep, and miles to go before I sleep.</p>
+                </div>
+                <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<h3>
+                <h3>
 <a id="standard-call-with-default-settings" class="anchor" href="#standard-call-with-default-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Standard call with default settings:</h3>
-
-<pre><code>&lt;script&gt;
+                <pre><code>&lt;script&gt;
   $('#theElement').crotator();
 &lt;/script&gt;
 </code></pre>
-
-<p>Here <code>theElement</code> is the id of the tag for which we want the contents to be converted to a Slides.</p>
-
-<h3>
+                <p>Here <code>theElement</code> is the id of the tag for which we want the contents to be converted to a Slides.</p>
+                <h3>
 <a id="call-with-options" class="anchor" href="#call-with-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call with options:</h3>
-
-<pre><code>&lt;script&gt;
+                <pre><code>&lt;script&gt;
   $('#theElement').crotator({
     timeOfExistence: 2, // in seconds
     typeofTag: "&lt;h4/&gt;",
@@ -60,22 +58,19 @@
   });
 &lt;/script&gt;
 </code></pre>
-
-<ul>
-<li>
-<code>timeOfExistence</code> decides what should be the duration of time for which a slide will be visible.</li>
-<li>
-<code>typeofTag</code> and <code>tagClass</code> respectively decide the tag and class of the tag that enclose the slide content. </li>
-<li>
-<code>cycle</code> turns on/off looping back to the starting slide. </li>
-<li>
-<code>startEmpty</code> decides whether there should be an element displayed when the page loads or contents starts appearing after the time given in <code>timeOfExistence</code>.</li>
-</ul>
-
-<h3>
+                <ul>
+                    <li>
+                        <code>timeOfExistence</code> decides what should be the duration of time for which a slide will be visible.</li>
+                    <li>
+                        <code>typeofTag</code> and <code>tagClass</code> respectively decide the tag and class of the tag that enclose the slide content. </li>
+                    <li>
+                        <code>cycle</code> turns on/off looping back to the starting slide. </li>
+                    <li>
+                        <code>startEmpty</code> decides whether there should be an element displayed when the page loads or contents starts appearing after the time given in <code>timeOfExistence</code>.</li>
+                </ul>
+                <h3>
 <a id="call-with-user-defined-array-of-timeline" class="anchor" href="#call-with-user-defined-array-of-timeline" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call with user defined array of timeline</h3>
-
-<pre><code>&lt;script&gt;
+                <pre><code>&lt;script&gt;
   $('#theElement').crotator({
     // timeline (in seconds)
     timeArray: [2, 20, 14, 9, 3, 10],
@@ -84,39 +79,36 @@
   });
 &lt;/script&gt;
 </code></pre>
-
-<p><code>timeArray</code> is in seconds. The length of <code>timeArray</code> should be equal to the number of children present in <code>theElement</code>.</p>
-
-<p>For more clarity, the example folder can be checked.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/anhee/jquery-crotator/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/anhee/jquery-crotator/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/anhee/jquery-crotator"></a> is maintained by <a href="https://github.com/anhee">anhee</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+                <p><code>timeArray</code> is in seconds. The length of <code>timeArray</code> should be equal to the number of children present in <code>theElement</code>.</p>
+                <p>For more clarity, the example folder can be checked.</p>
+            </section>
+            <aside id="sidebar">
+                <a href="https://github.com/anhee/jquery-crotator/zipball/master" class="button">
+                    <small>Download</small> .zip file
+                </a>
+                <a href="https://github.com/anhee/jquery-crotator/tarball/master" class="button">
+                    <small>Download</small> .tar.gz file
+                </a>
+                <p class="repo-owner">
+                    <a href="https://github.com/anhee/jquery-crotator"></a> is maintained by <a href="https://github.com/anhee">anhee</a>.</p>
+                <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+            </aside>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascripts/jquery.crotator.js"></script>
+    <script src="javascripts/main.js">
+    </script>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-62099578-2");
+        pageTracker._trackPageview();
+    } catch (err) {}
+    </script>
+</body>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-62099578-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
 </html>
