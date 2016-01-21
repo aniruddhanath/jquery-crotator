@@ -3,7 +3,7 @@ jQuery - Crotator
 
 A [jQuery](http://www.jquery.com) plugin for creating a **slider or content rotator**. It converts the children inside any selected element into a Slider. One can define array of timeline according to which the slider will be synced. CSS animations can be used with this plugin to enhance the contents visually.
 
-### [Demo](http://anhee.github.io/jquery-crotator/)
+### [Demo](http://aniruddhanath.github.io/jquery-crotator/)
 
 Usage
 -----
